@@ -21,7 +21,8 @@ assert_eq!(is_mirroring('\u{22FF}'), true);
 #![no_std]
 #![forbid(unsafe_code)]
 
-pub const UNICODE_VERSION: (u8, u8, u8) = (12, 1, 0);
+/// The Unicode version.
+pub const UNICODE_VERSION: (u8, u8, u8) = (13, 0, 0);
 
 const PAIRS: &[(char, char)] = &[
     ('\u{0028}', '\u{0029}'),
