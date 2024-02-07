@@ -17,12 +17,11 @@ assert_eq!(is_mirroring('\u{22FF}'), true);
 
 */
 
-#![doc(html_root_url = "https://docs.rs/unicode-bidi-mirroring/0.1.0")]
 #![no_std]
 #![forbid(unsafe_code)]
 
 /// The Unicode version.
-pub const UNICODE_VERSION: (u8, u8, u8) = (13, 0, 0);
+pub const UNICODE_VERSION: (u8, u8, u8) = (14, 0, 0);
 
 const PAIRS: &[(char, char)] = &[
     ('\u{0028}', '\u{0029}'),
@@ -216,6 +215,10 @@ const PAIRS: &[(char, char)] = &[
     ('\u{2E24}', '\u{2E25}'),
     ('\u{2E26}', '\u{2E27}'),
     ('\u{2E28}', '\u{2E29}'),
+    ('\u{2E55}', '\u{2E56}'),
+    ('\u{2E57}', '\u{2E58}'),
+    ('\u{2E59}', '\u{2E5A}'),
+    ('\u{2E5B}', '\u{2E5C}'),
     ('\u{3008}', '\u{3009}'),
     ('\u{300A}', '\u{300B}'),
     ('\u{300C}', '\u{300D}'),
